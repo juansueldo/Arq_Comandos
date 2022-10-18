@@ -31,10 +31,14 @@
 **********CREACION DE DIRECTORIOS**********
 *******************************************
 - ***mkdir -p Ejercicio_D/{uba,utnfra}/clase{1..5}***     crea el directorio
+
+![This is an image](https://i.postimg.cc/L4C5P7VW/subir1.png)
 - ***tree Ejercicio_D/***                                 ver el directorio   
 - ***rm -r  Ejercicio_D/***                               borrar de forma recursiva
 
 - ***mkdir -p Ejercicio_E/{utnba/clases{1..5},utnfra/{clases{1..9},examen}}***
+
+![This is an image](https://i.postimg.cc/SRBprWRn/subir2.png)
 - ***tree Ejercicio_E/***                                   
 - ***rm -r  Ejercicio_E/***
 
