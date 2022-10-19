@@ -42,6 +42,8 @@
 - ***tree Ejercicio_E/***                                   
 - ***rm -r  Ejercicio_E/***
 
+-***mkdir -p {Desarrollo/{fuentes,final}/backup,Testing/{fuentes,imagenes,final}/backup}***
+
 
 **********CREACION DE ARCHIVOS**********
 *******************************************
