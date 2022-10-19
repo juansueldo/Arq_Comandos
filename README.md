@@ -47,3 +47,15 @@
 *******************************************
 - ***cat /proc/cpuinfo > home/1erexamen/CPU.txt***
 - ***echo -n "Marca=" > cpu.txt && cat /proc/cpuinfo | grep vendor | uniq | cut -d ":" -f2 >> cpu.txt && echo -n "Modelo de CPU=" >> cpu.txt && cat /proc/cpuinfo | grep model | grep name | uniq | cut -d ":" -f2 >> cpu.txt && echo -n "Frecuencia=" >> cpu.txt && cat /proc/cpuinfo | grep MHz | uniq | cut -d ":" -f2 >> cpu.txt && echo -n "Procesadores=" >> cpu.txt  &&  cat /proc/cpuinfo | grep cores | uniq | cut -d ":" -f2 >> cpu.txt***
+
+
+**********CREACION DE PARTICIONES**********
+*******************************************
+
+- ***sudo fdisk -l***  Lista todos los discos
+- ***sudo fdisk /dev/disco***
+- ***n***
+- ***sudo mkfs.ext4 /dev/disco***
+- ***sudo mount /dev/disco /home/mount***
+- ***lsblk***
+
