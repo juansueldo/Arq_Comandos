@@ -61,3 +61,13 @@
 - ***sudo mount /dev/disco /home/mount***
 - ***lsblk***
 
+
+**********CREACION DE USUARIOS**********
+*******************************************
+- ***useradd -m -s /bin/bash -c "Usuario tecnico" tecnico***
+- ***grep tecnico /etc/passwd***
+- ***grep tecnico /etc/group***
+- ***grep tecnico /etc/shadow***
+
+
+
