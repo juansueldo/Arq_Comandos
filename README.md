@@ -69,5 +69,24 @@
 - ***grep tecnico /etc/group***
 - ***grep tecnico /etc/shadow***
 
+************LVM************
+*******************************************
+- ***lsblk*** para ver los discos
+- ***fdisk /dev/sdb*** disco a particionar
+luego de hacer las particiones cambiamos de tipo de particion con la letra t, se elige el sector y el formato 8e
+- ***pvcreate /dev/sdb1*** creacion de physical volume
+- ***pvs*** para comprobar la creacion
+- ***vgcreate vg_Nombre /dev/sdb1*** creacion del voulume group
+- ***vgs*** comprobar la creacion
+- ***lvcreate -L +512M vg_Nombre -n LV_Nombre*** creacion del logical volume
+- ***pvs; vgs; lvs*** para comprobar
+- ***mkfs -t ext4 /dev/mapper/vg_Nombre-LV_Nombre*** dar formato
+- ***mount /dev/mapper/vg_NombreLVM-LV_Nombre /Directorio*** montamos en el directorio indicado
+- ***df -h*** para comprobar si se monto de manera correcta
+- ***vgextend vg_Nombre /dev/sdb2*** extender volume group
+
+
+
+
 
 
